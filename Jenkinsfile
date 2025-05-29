@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Get Repository') {
             steps {
-                git 'https://github.com/Charan-666/RoomanInternship.git'
+                git branch: 'main', url: 'https://github.com/Charan-666/RoomanInternship.git'
             }
         }
 
