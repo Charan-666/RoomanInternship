@@ -10,8 +10,14 @@ app.get('/', (req, res) => {
 });
 
 app.post('/submit', (req, res) => {
-  const name = req.body.name;
-  res.send(`<h2>Hello, ${name}! 🎉</h2><br><a href="/">Go Back</a>`);
+  const { name, email, age, feedback } = req.body;
+  res.send(`
+    <h2>Thank You, ${name}!</h2>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Age:</strong> ${age}</p>
+    <p><strong>Feedback:</strong><br>${feedback}</p>
+    <br><a href="/">Go Back</a>
+  `);
 });
 
 app.listen(port,'0.0.0.0', () => {
