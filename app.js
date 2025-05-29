@@ -14,6 +14,6 @@ app.post('/submit', (req, res) => {
   res.send(`<h2>Hello, ${name}! 🎉</h2><br><a href="/">Go Back</a>`);
 });
 
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
   console.log(`App running at http://localhost:${port}`);
 });
