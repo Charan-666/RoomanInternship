@@ -23,7 +23,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Skipping build: No build step needed for basic Node.js app'
+                echo 'Skipping build: No build here Node.js app'
             }
         }
 
